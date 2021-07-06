@@ -1,5 +1,14 @@
+import { useContext } from 'react';
+
+import FavoritesContext from '../store/favorite-context';
+
 function FavoritesPage() {
-    return <div>FavoritesPage</div>
+    const favoritesCtx = useContext(FavoritesContext);
+
+    return (<section>
+        <h1>My Favorites</h1>
+    </section>);
 }
 
 export default FavoritesPage;
+
